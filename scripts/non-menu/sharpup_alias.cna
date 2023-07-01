@@ -4,7 +4,7 @@ beacon_command_register("sharpup", "Privilege Escalation Checks",
 alias sharpup{
 	local('$bid $asm $desc @args $argu');
 	$bid = $1;
-	$asm = "/opt/cobalt_strike_extension_kit/exe/SharpUp.exe";
+	$asm = "/opt/cobaltstrike/custom/csek/exe/SharpUp.exe";
 	$desc = "SharpUp";
 	@args = @_;
 	remove(@args, $bid);

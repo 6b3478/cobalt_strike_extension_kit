@@ -10,28 +10,28 @@
            ############################		  Load Non-Menu Scripts		############################
                              
                                 
-@aggressor =  ls('/opt/cobalt_strike_extension_kit/scripts/non-menu');
+@aggressor =  ls('/opt/cobaltstrike/custom/csek/scripts/non-menu');
 println("[+] Importing:");
 foreach $file (@aggressor){ 
 	include($file);
 	println("   $file");
 }
 
-@bofaggressor =  ls('/opt/cobalt_strike_extension_kit/bof/syscalls');
+@bofaggressor =  ls('/opt/cobaltstrike/custom/csek/bof/syscalls');
 println("[+] Importing:");
 foreach $file (@bofaggressor){ 
 	include($file);
 	println("   $file");
 }
 
-@bofwmiaggressor =  ls('/opt/cobalt_strike_extension_kit/bof/wmisub');
+@bofwmiaggressor =  ls('/opt/cobaltstrike/custom/csek/bof/wmisub');
 println("[+] Importing:");
 foreach $file (@bofwmiaggressor){ 
 	include($file);
 	println("   $file");
 }
 
-@bofuhaggressor =  ls('/opt/cobalt_strike_extension_kit/bof/unhook/');
+@bofuhaggressor =  ls('/opt/cobaltstrike/custom/csek/bof/unhook/');
 println("[+] Importing:");
 foreach $file (@bofuhaggressor){ 
 	include($file);
@@ -55,7 +55,7 @@ foreach $file (@bofuhaggressor){
 
 popup beacon_top {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/favorites.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/favorites.cna')
 
 }
 
@@ -68,7 +68,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/favorites.cna')
 popup beacon_top{
 menu "csek - Quick Enum" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/quickenum.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/quickenum.cna')
 
 }
 }
@@ -82,7 +82,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/quickenum.cna')
 popup beacon_top{
 menu "csek - Initial Access" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/initialacc.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/initialacc.cna')
 
 }
 }
@@ -96,7 +96,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/initialacc.cna')
 popup beacon_top{
 menu "csek - Enumeration" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/enum.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/enum.cna')
 
 }
 }
@@ -110,7 +110,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/enum.cna')
 popup beacon_top{
 menu "csek - Defense Evasion" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/defev.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/defev.cna')
 
 }
 }
@@ -125,7 +125,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/defev.cna')
 popup beacon_top{
 menu "csek - Code Execution" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/codeexec.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/codeexec.cna')
 
 }
 }
@@ -139,7 +139,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/codeexec.cna')
 popup beacon_top{
 menu "csek - Lateral Movement" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/latmove.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/latmove.cna')
 
 }
 }
@@ -153,7 +153,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/latmove.cna')
 popup beacon_top{
 menu "csek - Privilege Escalation" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/privesc.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/privesc.cna')
 
 }
 }
@@ -167,7 +167,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/privesc.cna')
 popup beacon_top{
 menu "csek - Credential Access" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/credaccess.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/credaccess.cna')
 
 }
 }
@@ -182,7 +182,7 @@ include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/credaccess.cna')
 popup beacon_top{
 menu "csek - Persistence" {
 
-include('/opt/cobalt_strike_extension_kit/scripts/menuscripts/persist.cna')
+include('/opt/cobaltstrike/custom/csek/scripts/menuscripts/persist.cna')
 
 }
 }

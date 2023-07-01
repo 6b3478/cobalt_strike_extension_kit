@@ -130,7 +130,7 @@ TestMethod");
 alias sharpview{
 	local('$bid $asm $desc @args $argu');
 	$bid = $1;
-	$asm = "/opt/cobalt_strike_extension_kit/exe/SharpView.exe";
+	$asm = "/opt/cobaltstrike/custom/csek/exe/SharpView.exe";
 	$desc = "SharpView";
 	@args = @_;
 	remove(@args, $bid);
